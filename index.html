@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/output.css">
+    <title>Vick Spice</title>
+</head>
+<body class="text-gray-600 font-serif">
+
+   <div class="grid md:grid-cols-3 md:flex md:justify-end"> <!-- content wrapper-->
+    <div class="md:col-span-1"> <!--nav starts -->
+        <nav class="text-right">
+            <div class="bg-primary flex justify-between items-center">
+                <h1 class="font-bold uppercase p-4 border-b border-gray text-white">
+                    <a href="/" class="hover:text-gray-700">Vick's Spice</a>   
+                </h1>
+                <!-- handbuger menu -->
+                <div class="px-4 cursor-pointer md:hidden" id="burger">
+                    <span class="text-white text-xl font-bold">
+                        <svg class="text-white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 30 30">
+                            <path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"></path>
+                            </svg>
+                    </span>
+                </div>
+            </div>
+            <ul class="text-sm mt-6 hidden md:block" id="menu">
+                <li class="text-gray-700 font-bold py-1">
+                    <a href="#" class="px-4 flex justify-end border-r-4 border-primary">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="py-1">
+                    <a href="#" class="px-4 flex justify-end border-r-4 border-white">
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="py-1">
+                    <a href="#orders" class="px-4 flex justify-end border-r-4 border-white">
+                        <span>Orders</span>
+                    </a>
+                </li>
+                <li class="py-1">
+                    <a href="#contact" class="px-4 flex justify-end border-r-4 border-white">
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div> <!-- nav ends -->
+
+    <main class="px-16 py-6 bg-gray md:col-span-2"> <!--main content-->
+        <div class="flex justify-center md:justify-end">
+            <a href="#" class="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Sign up</a>
+            <a href="#" class="btn text-primary border-primary ml-2 md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Log in</a>
+        </div>
+        
+        <header>
+            <h2 class="text-gray-700 text-6xl font-bold">Recipes</h2>
+            <h3 class="text-2xl text-primary font-bold">From your favorite spot</h3>
+        </header>
+
+        <div> 
+            <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
+            <div class="mt-8 grid lg:grid-cols-3 gap-10"> <!--cards container for all recipes-->
+                <!-- cards go here -->
+                    <div class="card hover:shadot-gray-700 cursor-pointer">
+                        <img src="./public/img/stew.jpg" class="w-full h-32 sm:h-48 object-cover" alt="stew">
+                        <div class="m-4">
+                            <span class="font-bold">5 Bean chilli stew</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Victoria</span>
+                        </div>
+                        <div class="badge">
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadot-gray-700 cursor-pointer">
+                        <img src="./public/img/noodles.jpg" class="w-full h-32 sm:h-48 object-cover" alt="noodles">
+                        <div class="m-4">
+                            <span class="font-bold">Veg Noodles</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Victoria</span>
+                        </div>
+                        <div class="badge">
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadot-gray-700 cursor-pointer">
+                        <img src="./public/img/curry.jpg" class="w-full h-32 sm:h-48 object-cover" alt="curry">
+                        <div class="m-4">
+                            <span class="font-bold">Tofu curry</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Victoria</span>
+                        </div>
+                        <div class="badge">
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <!-- most popular  -->
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most Popular</h4>  
+                <div class="my-8 grid lg:grid-cols-3 gap-10">
+                        <!-- cards go here -->
+                    <div class="card hover:shadot-gray-700 cursor-pointer">
+                            <img src="./public/img/stew.jpg" class="w-full h-32 sm:h-48 object-cover" alt="stew">
+                            <div class="m-4">
+                                <span class="font-bold">5 Bean chilli stew</span>
+                                <span class="block text-gray-500 text-sm">Recipe by Victoria</span>
+                            </div>
+                            <div class="badge">
+                                <span>25 mins</span>
+                            </div>
+                    </div>
+                    <div class="card hover:shadot-gray-700 cursor-pointer">
+                            <img src="./public/img/noodles.jpg" class="w-full h-32 sm:h-48 object-cover" alt="noodles">
+                            <div class="m-4">
+                                <span class="font-bold">Veg Noodles</span>
+                                <span class="block text-gray-500 text-sm">Recipe by Victoria</span>
+                            </div>
+                            <div class="badge">
+                                <span>25 mins</span>
+                            </div>
+                    </div>
+
+                     <div class="card hover:shadot-gray-700 cursor-pointer">
+                        <img src="./public/img/curry.jpg" class="w-full h-32 sm:h-48 object-cover" alt="curry">
+                        <div class="m-4">
+                            <span class="font-bold">Tofu curry</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Victoria</span>
+                        </div>
+                        <div class="badge">
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                </div>
+             <!-- button -->
+         <div class="flex justify-center">
+            <div class="btn bg-secondary text-secondary-200 hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300">Learn more</div>
+        </div>
+        </div>
+        <!-- table for caontaining all the -->
+        <div id="orders">
+            <h1 class="text-xl mb-2">Your orders</h1>
+
+            <div class='overflow-auto rounded-lg shadow hidden md:block'> <!-- mobile screens hidden -->
+            <table class='w-full'>
+                    <thead class='bg-gray-50 border-b-2 border-gray-200'>
+                        <tr>
+                            <th class='w-20 p-3 text-sm font-semibold tracking-wide text-left'>No.</th>
+                            <th class='p-3 text-sm font-semibold tracking-wide text-left'>Details</th>
+                            <th class='w-24 p-3 text-sm font-semibold tracking-wide text-left'>Status</th>
+                            <th class='w-24 p-3 text-sm font-semibold tracking-wide text-left'>Date</th>
+                            <th class='w-32 p-3 text-sm font-semibold tracking-wide text-left'>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody class='divide-y divide-gray-100'>
+                        <tr class='bg-white'>
+                            <td class='p-3 text-sm text-gray-700 whitespace-nowrap'>
+                                <a href="#" class='font-bold text-blue-500 hover:underline'>10001</a>
+                            </td>
+                            <td class='p-3 text-sm text-gray-700 whitespace-nowrap'>
+                               5 Bean Chilli Stew
+                            </td>
+                            <td class='p-3 text-sm text-gray-700 whitespace-nowrap'>
+                                <span class='p-1.5 text-xs font-medium uppercase tracking-wider text-green-800 bg-green-200 rounded-lg bg-opacity-50'>Delivered</span>
+                            </td>
+                            <td class='p-3 text-sm text-gray-700 whitespace-nowrap'>16/10/2024</td>
+                            <td class='p-3 text-sm text-gray-700 whitespace-nowrap'>$200.00</td>
+                        </tr>
+                        <tr class='bg-gray-50'>
+                            <td class='p-3 text-sm text-gray-700 whitespace-nowrap'>
+                                <a href="#" class='font-bold text-blue-500 hover:underline'>10002</a>
+                            </td>
+                            <td class='p-3 text-sm text-gray-700 whitespace-nowrap'>
+                                Veg Noodles
+                            </td>
+                            <td class='p-3 text-sm text-gray-700 whitespace-nowrap'>
+                            <span class='p-1.5 text-xs font-medium uppercase tracking-wider text-yellow-800 bg-yellow-200 rounded-lg bg-opacity-50'>Shipped</span>
+                            </td>
+                            <td class='p-3 text-sm text-gray-700 whitespace-nowrap'>16/10/2024</td>
+                            <td class='p-3 text-sm text-gray-700 whitespace-nowrap'>$200.00</td>
+                        </tr>
+                        <tr class='bg-white'>
+                            <td class='p-3 text-sm text-gray-700 whitespace-nowrap'>
+                                <a href="#" class='font-bold text-blue-500 hover:underline'>10003</a>
+                            </td>
+                            <td class='p-3 text-sm text-gray-700 whitespace-nowrap'>
+                                Tofu curry
+                            </td>
+                            <td class='p-3 text-sm text-gray-700 whitespace-nowrap'>
+                            <span class='p-1.5 text-xs font-medium uppercase tracking-wider text-gray-800 bg-gray-200 rounded-lg bg-opacity-50'>Canceled</span>
+                            </td>
+                            <td class='p-3 text-sm text-gray-700 whitespace-nowrap'>16/10/2024</td>
+                            <td class='p-3 text-sm text-gray-700 whitespace-nowrap'>$200.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+            <!--  mobile only view  -->
+            <div class="grid grid-cols-1 gap-1 md:hidden">
+                <!--  wrapper  -->
+                <div class='bg-white p-4 space-y-3 rounded-lg shadow'>
+                     <!-- container to hold the order number  -->
+                    <div class='flex items-center space-x-2 text-sm'>
+                        <div>
+                            <a href="#" class='text-blue-500 font-bold hover:underline'>10001</a>
+                        </div>
+                        <div class='text-gray-500'>16/10/2024</div>
+                        <div>
+                        <span class='p-1.5 text-xs font-medium uppercase tracking-wider text-green-800 bg-green-200 rounded-lg bg-opacity-50'>Delivered</span>
+                        </div>
+                    </div>
+                    <div class='text-sm text-gray-700'>
+                    Kring new fit office Chair
+                    </div>
+                    <div class='text-sm font-medium text-black'>
+                        $200.00
+                    </div>
+                </div>
+                <div class='bg-white p-4 space-y-3 rounded-lg shadow'>
+                    <!-- container to hold the order number  -->
+                    <div class='flex items-center space-x-2 text-sm'>
+                        <div>
+                            <a href="#" class='text-blue-500 font-bold hover:underline'>10002</a>
+                        </div>
+                        <div class='text-gray-500'>16/10/2024</div>
+                        <div>
+                        <span class='p-1.5 text-xs font-medium uppercase tracking-wider text-yellow-800 bg-yellow-200 rounded-lg bg-opacity-50'>Delivered</span>
+                        </div>
+                    </div>
+                    <div class='text-sm text-gray-700'>
+                    Kring new fit office Chair
+                    </div>
+                    <div class='text-sm font-medium text-black'>
+                        $200.00
+                    </div>
+                </div>
+                <div class='bg-white p-4 space-y-3 rounded-lg shadow'>
+                    <!-- container to hold the order number  -->
+                    <div class='flex items-center space-x-2 text-sm'>
+                        <div>
+                            <a href="#" class='text-blue-500 font-bold hover:underline'>10003</a>
+                        </div>
+                        <div class='text-gray-500'>16/10/2024</div>
+                        <div>
+                        <span class='p-1.5 text-xs font-medium uppercase tracking-wider text-gray-800 bg-gray-200 rounded-lg bg-opacity-50'>Canceled</span>
+                        </div>
+                    </div>
+                    <div class='text-sm text-gray-700'>
+                    Kring new fit office Chair
+                    </div>
+                    <div class='text-sm font-medium text-black'>
+                        $200.00
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="contact">
+            <section class=" mt-4">
+                <div class="mx-auto mx-w-2xl py-24">
+                    <div class="bg-white py-8 px-6 mb-4 rounded-md shadow-md m-4 md:m-0 relative">
+                        <form class="py-10">
+                            <h2 class="md:text-center md:text-primary font-bold md:text-3xl mb-6 sm:text-primary sm:text-2xl sm:text-start">Drop me a line</h2>
+                            <div class="mb-2">
+                                <label 
+                                for="full_name"
+                                class="block font-bold text-gray-700 mb-2"
+                                >Name</label>
+                                <input 
+                                type="text"
+                                required
+                                id="full_name"
+                                name="full_name"
+                                placeholder="Enter Your Name"
+                                class="w-full focus:outline-none border py-2 px-6 rounded text-lg"
+                                >
+                                <div class="mb-2">
+                                    <label 
+                                    for="email"
+                                    class="block font-bold text-gray-700 mb-2"
+                                    >Contact Email</label>
+                                    <input 
+                                    type="email"
+                                    required
+                                    id="email"
+                                    name="email"
+                                    placeholder="eg. johndoe@gmail.com"
+                                    class="w-full focus:outline-none border py-2 px-6 rounded text-lg"
+                                    >
+                                    <div class="mb-2">
+                                        <label 
+                                        for="inquiry"
+                                        class="block font-bold text-gray-700 mb-2"
+                                        >Message</label>
+                                      <textarea 
+                                      name="inquiry"
+                                      required 
+                                      id="inquiry"
+                                      rows="4"
+                                      placeholder="get inquiry"
+                                      class="border rounded text-lg w-full py-2 px-3 focus:outline-none"
+                                      ></textarea>
+                            </div>
+                            <div class="mb-2">
+                                <button
+                                type="submit" 
+                                class="absolute py-2 px-4 rounded-full w-48 uppercase font-bold bg-primary text-white w-42 bottom-0 right-10 my-5">Drop it</button>
+                            </div>
+                            <div class="absolute bg-primary overflow-hidden rounded-bl-full top-0 right-0 h-32 w-32">
+                                <span></span>
+                              </div>
+                            <div class="absolute md:bg-primary overflow-hidden rounded-tr-full bottom-0 left-0 h-16 w-16">
+                                <span></span>
+                              </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </main>
+   
+   </div>
+   <script src="./public/index.js"></script>
+</body>
+</html>
